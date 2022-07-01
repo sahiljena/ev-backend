@@ -120,6 +120,13 @@ router.post("/:userid/updateStatus/", async(req, res) => {
   })
 });
 
+router.get("/:userid/allbills", auth, async(req, res) => {
+  const allbills = await Rating.find({ customerID: req.params.userid });
+  res.status(200).json({
+    allbills: allbills
+  })
+})
+
 router.get("/:userid/unpaid", auth, async(req, res) => {
   const unPaidBills = await Rating.find({ customerID: req.params.userid, pay_status:0 });
   res.status(200).json({
