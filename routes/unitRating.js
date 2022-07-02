@@ -119,6 +119,12 @@ router.post("/:userid/updateStatus/", async(req, res) => {
     message: "Bills updated Successfully"
   })
 });
+router.get("/:userid/currentRating", auth, async(req, res) => {
+  const allbills = await Rating.find({ customerID: req.params.userid, pay_status:-1 });
+  res.status(200).json({
+    allbills: allbills
+  })
+})
 
 router.get("/:userid/allbills", auth, async(req, res) => {
   const allbills = await Rating.find({ customerID: req.params.userid });
