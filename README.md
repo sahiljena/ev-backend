@@ -5,7 +5,7 @@
    * SIGNUP
    * LOGIN
    * DETAILS
-   * View Current Reding
+   * View Current Meter Reading
    * Old Bills
 
 1. IoT METER Reading
