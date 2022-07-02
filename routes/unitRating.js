@@ -128,6 +128,7 @@ router.get("/:userid/currentRating", auth, async(req, res) => {
 })
 
 router.get("/:userid/allbills", auth, async(req, res) => {
+  console.log(req.params.userid);
   const allbills = await Rating.find({ customerID: req.params.userid });
   res.status(200).json({
     allbills: allbills
