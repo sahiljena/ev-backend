@@ -29,6 +29,10 @@ const dataSchema = new mongoose.Schema({
     password:{
         required: true,
         type: String,
+    },
+    regNo:{
+        required: false,
+        type:String
     }
 })
 
