@@ -1,5 +1,17 @@
 # ev-backend
 
+### Functions
+1. USER
+   * SIGNUP
+   * LOGIN
+   * DETAILS
+   * View Current Reding
+   * Old Bills
+
+1. IoT METER Reading
+   * UPDATE METER
+   * GET READING
+   * GENRATE BILL
 ## Users
 ### To create a new user
  ``` 
