@@ -5,11 +5,6 @@ const dataSchema = new mongoose.Schema({
         required: true,
         type: String,
     },
-    regNo: {
-        unique: true,
-        required: false,
-        type: String,
-    },
     userUID:{
         unique: true,
         required: true,
