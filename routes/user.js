@@ -49,6 +49,7 @@ router.post('/new', (req, res) => {
                 userUID: random_code,
                 phNo: req.body.phoneNumber,
                 status: 0,
+                regNo: random_code,
             });
             var mailCode = Buffer.from(`${req.body.email}::${random_code}`).toString('base64');
              // save the new user
